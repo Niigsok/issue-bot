@@ -8,7 +8,7 @@ desc 'Process all the opened and closed issues'
 task :process_issues do
   logging_exceptions('process-issues.log') do |logger|
     Fastlane::Bot.new(logger).start(process: :issues)
-  end
+  enod
 end
 
 desc 'Process all the opened and closed pull requests'
